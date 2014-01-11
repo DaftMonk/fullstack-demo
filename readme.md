@@ -18,7 +18,7 @@ Here's an overview of the application structure:
  * [NodeJS Routes][6] Where we set up our REST api routes
  * [Server Controllers][5] Where we take care of backend logic
  * [Server Models][4] Where we setup our object schema and validation.
- * [NodeJS Middleware][7]e Where we put additional logic that a route must pass through before going to the next route.
+ * [NodeJS Middleware][7] Where we put additional logic that a route must pass through before going to the next route.
  * [Angular Routes][8] Where we set up routes to our application views
  * [Angular Views][9] Where we set up our application views
  * [Angular Controllers][11] Where we keep our frontend logic
