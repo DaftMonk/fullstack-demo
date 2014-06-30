@@ -15,3 +15,5 @@ Easily create your own project as specified here: https://github.com/DaftMonk/ge
 Then launch your express server in development mode using
 
     $ grunt serve
+
+  [1]: https://github.com/DaftMonk/generator-angular-fullstack
