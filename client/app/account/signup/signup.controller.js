@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('fullstackDemoApp')
-  .controller('SignupCtrl', function ($scope, Auth, $location) {
+angular.module('demoApp')
+  .controller('SignupCtrl', function ($scope, Auth, $location, $window) {
     $scope.user = {};
     $scope.errors = {};
 
@@ -29,5 +29,9 @@ angular.module('fullstackDemoApp')
           });
         });
       }
+    };
+
+    $scope.loginOauth = function(provider) {
+      $window.location.href = '/auth/' + provider;
     };
   });

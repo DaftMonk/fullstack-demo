@@ -3,6 +3,8 @@
     "insertRoutes": true,
     "registerRoutesFile": "server/routes.js",
     "routesNeedle": "// Insert routes below",
+    "routesBase": "/api/",
+    "pluralizeRoutes": true,
     "insertSockets": true,
     "registerSocketsFile": "server/config/socketio.js",
     "socketsNeedle": "// Insert sockets below",
@@ -14,6 +16,7 @@
       "socketio": true,
       "mongoose": true,
       "auth": true,
+      "oauth": true,
       "googleAuth": true,
       "twitterAuth": true
     }

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('fullstackDemoApp')
+angular.module('demoApp')
   .controller('MainCtrl', function ($scope, $http, socket) {
     $scope.awesomeThings = [];
 

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('fullstackDemoApp')
+angular.module('demoApp')
   .config(function ($stateProvider) {
     $stateProvider
       .state('admin', {

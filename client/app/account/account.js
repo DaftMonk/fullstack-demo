@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('fullstackDemoApp')
+angular.module('demoApp')
   .config(function ($stateProvider) {
     $stateProvider
       .state('login', {
@@ -16,6 +16,7 @@ angular.module('fullstackDemoApp')
       .state('settings', {
         url: '/settings',
         templateUrl: 'app/account/settings/settings.html',
-        controller: 'SettingsCtrl'
+        controller: 'SettingsCtrl',
+        authenticate: true
       });
   });

@@ -1,12 +1,12 @@
 'use strict';
 
-angular.module('fullstackDemoApp', [
+angular.module('demoApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ui.bootstrap',
   'btford.socket-io',
-  'ui.router'
+  'ui.router',
+  'ui.bootstrap'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider
@@ -44,9 +44,11 @@ angular.module('fullstackDemoApp', [
 
   .run(function ($rootScope, $location, Auth) {
     // Redirect to login if route requires auth and you're not logged in
-    $rootScope.$on('$routeChangeStart', function (event, next) {
-      if (next.authenticate && !Auth.isLoggedIn()) {
-        $location.path('/login');
-      }
+    $rootScope.$on('$stateChangeStart', function (event, next) {
+      Auth.isLoggedInAsync(function(loggedIn) {
+        if (next.authenticate && !loggedIn) {
+          $location.path('/login');
+        }
+      });
     });
   });

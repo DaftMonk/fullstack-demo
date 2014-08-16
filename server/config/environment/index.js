@@ -26,7 +26,7 @@ var all = {
 
   // Secret for session, you will want to change this and make it an environment variable
   secrets: {
-    session: 'fullstack-demo-secret'
+    session: 'demo-secret'
   },
 
   // List of user roles
@@ -44,13 +44,13 @@ var all = {
   twitter: {
     clientID:     process.env.TWITTER_ID || 'id',
     clientSecret: process.env.TWITTER_SECRET || 'secret',
-    callbackURL:  'http://fullstack-demo.herokuapp.com/auth/twitter/callback'
+    callbackURL:  process.env.DOMAIN + '/auth/twitter/callback'
   },
 
   google: {
     clientID:     process.env.GOOGLE_ID || 'id',
     clientSecret: process.env.GOOGLE_SECRET || 'secret',
-    callbackURL:  'http://fullstack-demo.herokuapp.com/auth/google/callback'
+    callbackURL:  process.env.DOMAIN + '/auth/google/callback'
   }
 };
 
