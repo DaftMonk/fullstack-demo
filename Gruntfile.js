@@ -1,4 +1,4 @@
-// Generated on 2014-08-16 using generator-angular-fullstack 2.0.9
+// Generated on 2014-08-26 using generator-angular-fullstack 2.0.11
 'use strict';
 
 module.exports = function (grunt) {
@@ -128,7 +128,16 @@ module.exports = function (grunt) {
         options: {
           jshintrc: 'server/.jshintrc'
         },
-        src: [ 'server/{,*/}*.js']
+        src: [
+          'server/**/*.js',
+          '!server/**/*.spec.js'
+        ]
+      },
+      serverTest: {
+        options: {
+          jshintrc: 'server/.jshintrc-spec'
+        },
+        src: ['server/**/*.spec.js']
       },
       all: [
         '<%= yeoman.client %>/{app,components}/**/*.js',
