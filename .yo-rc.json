@@ -13,6 +13,8 @@
       "html": true,
       "sass": true,
       "uirouter": true,
+      "bootstrap": false,
+      "uibootstrap": false,
       "socketio": true,
       "mongoose": true,
       "auth": true,
@@ -27,6 +29,7 @@
     "filterDirectory": "client/app/",
     "serviceDirectory": "client/app/",
     "basePath": "client",
+    "moduleName": "",
     "filters": [
       "uirouter"
     ],

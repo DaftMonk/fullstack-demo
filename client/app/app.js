@@ -5,8 +5,7 @@ angular.module('demoApp', [
   'ngResource',
   'ngSanitize',
   'btford.socket-io',
-  'ui.router',
-  'ui.bootstrap'
+  'ui.router'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider
