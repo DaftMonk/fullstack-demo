@@ -1,4 +1,4 @@
-# Fullstack demo generated using [Angular Fullstack][1]
+# Fullstack demo generated using [Angular Fullstack][1] [![Code Climate](https://codeclimate.com/github/DaftMonk/fullstack-demo/badges/gpa.svg)](https://codeclimate.com/github/DaftMonk/fullstack-demo)
 
 [Angular Fullstack][1] is a MEAN generator. It scaffolds applications with MongoDB, Express, AngularJS, and Node.
 
@@ -16,4 +16,4 @@ Then launch your express server in development mode using
 
     $ grunt serve
 
-  [1]: https://github.com/DaftMonk/generator-angular-fullstack
+[1]: https://github.com/DaftMonk/generator-angular-fullstack
