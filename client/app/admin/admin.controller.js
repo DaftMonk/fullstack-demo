@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('demoApp')
-  .controller('AdminCtrl', function ($scope, $http, Auth, User) {
+  .controller('AdminCtrl', function ($scope, $http, User) {
 
     // Use the User $resource to fetch all users
     $scope.users = User.query();
